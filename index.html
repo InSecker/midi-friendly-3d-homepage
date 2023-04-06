@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.284/build/spline-viewer.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="logo.svg">
+      <div>
+        <a class="button" href="#contact">CONTACT</a>
+      </div>
+    </header>
+    <main>
+      <div class="hero section">
+        <h1>MidiFriendly, savoir où déjeuner <br> <span class="orange">simplement</span></h1>
+        <spline-viewer loading-anim url="https://prod.spline.design/RWhJh-zZyAxag0Xa/scene.splinecode" class="map"></spline-viewer>
+      </div>
+      <div class="content section">
+        <h2>Nos services</h2>
+        <section>
+          <p class="item">
+            Vous cherchez chaque jour vers quel restaurant se tourner ? Ajouter ses restaurants favoris et pouvoir, d’un coup d’oeil, connaître les goûts de chacun.
+          </p>
+          <div class="mini-spline-wrapper item">
+            <spline-viewer url="https://prod.spline.design/6dXnkti36KFtFZHY/scene.splinecode" class=" mini-spline"></spline-viewer>
+          </div>
+        </section>
+        <section>
+          <div class="mini-spline-wrapper item">
+            <spline-viewer url="https://prod.spline.design/6dXnkti36KFtFZHY/scene.splinecode" class=" mini-spline"></spline-viewer>
+          </div>
+          <p class="item">
+            Vous cherchez chaque jour vers quel restaurant se tourner ? Ajouter ses restaurants favoris et pouvoir, d’un coup d’oeil, connaître les goûts de chacun.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="footer-content">
+        <h2>Contactez-nous</h2>
+      </div>
+
+    </footer>
+  </body>
+</html>
