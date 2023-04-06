@@ -49,6 +49,7 @@ table {
 html {
   --orange: #F18669;
   --black: #171717;
+  --yellow: rgb(255,200,90);
   color: var(--black);
   font-family: "Lato", sans-serif;
 }
@@ -110,7 +111,7 @@ header {
   right: 0;
   top: 0;
   height: 100vh;
-  background: rgb(255,200,90);
+  background: var(--yellow);
 }
 
 .map-wrapper:after {
@@ -209,6 +210,15 @@ h2 {
   border-radius: 12px;
 
   transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+.reversed.mini-spline-wrapper:after{
+  background: var(--yellow);
+  left:55%;
+  transform: translate(-50%, -50%) rotate(10deg)
+}
+.reversed.mini-spline-wrapper > .mini-spline{
+  transform: scaleX(-1);
 }
 
 .mini-spline {
